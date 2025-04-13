@@ -1,5 +1,5 @@
 /*
- * 01_Basics_Part02.cpp
+ * _01_Basics_Part02.cpp
  *
  *  Created on: Apr 7, 2025
  *      Author: AhmedMontasser
@@ -9,7 +9,10 @@
  * Module Description:
  * 	1. Range-Based For Loop.
  * 	2. Function Overloading.
- * 	3.
+ * 	3. Default Function Arguments.
+ * 	4. Inline Function.
+ * 	5. Function Pointer.
+ * 	6. namespace keyword.
  */
 
 #include <iostream>
@@ -19,6 +22,20 @@ float _fuOverloading_AddFunction(const float &num1, const float &num2);
 std::string _fuOverloading_AddFunction(const char &char1, const char &char2);
 void _fuDefaultArgument_CreateWindow(const std::string &title, const int &x=-1, const int &y=-1, const int &width=-1, const int &height=-1);
 inline long long int _inlineFu_Square(int number);
+void EndMessage(void);
+/* Name space Topic */
+namespace average {		// Name space is visible in source .cpp >> this file in that situation without using namespace.
+	float calculate(float num1, float num2) {
+		return ((num1+num2)/2);
+	}
+}
+namespace sum {
+	int calculate(int num1, int num2) {
+		return num1+num2;
+	}
+}
+/***********************************/
+
 
 void _01_Basics_Part02(void) {
 
@@ -132,9 +149,40 @@ void _01_Basics_Part02(void) {
 	/* Function Pointer:-
 	 * -------------------
 	 * 	- Pointer that can hold address of a function.
-	 * 	-
+	 * 	- Type of pointer, is the same like function signature.
+	 * 	- Used to indirectly invoke a function, without knowing its name.
+	 * 	- Used by algorithms and classes for customization.
+	 * [SYNTAX]:
+	 * 	RETURN_VALUE (*PTR_NAME)(FU_ARGUMENTS) = &FU_NAME;		// & is Optional to add or removed
 	 */
+	void (*fuPtr)(const std::string&, const int&, const int&, const int&, const int&) = _fuDefaultArgument_CreateWindow;
+	(*fuPtr)("PointerToFunction",10,20,30,40);
+	atexit(EndMessage);		// Call-back Function, that accept function pointer and execute it at End of MAIN Program.
 
+	/* namespace keyword:-
+	 * -------------------
+	 * 	- Named declarative region for declaring types.
+	 * 	- types are not visible outside the namespace (scope).
+	 * 		> to use outside the scope you have to add namespace name before variable name separated with "::".
+	 * 	- Standard library is declcared in std namespace.
+	 * 	- Prevent name clashes; when to types have the same name.
+	 * 	- Helps for code modularization.
+	 * [SYNTAX]:
+	 * 	namespace NAMESPACE_NAME {
+	 * 		.. ANY C++ TYPES ..
+	 * 	}
+	 *
+	 * For using datatypes from namespace
+	 * 1. open the whole namespace
+	 * 		using namespace NAMESPACE_NAME;			// opened in the scope where the line is used.
+	 * 2. open namespace of specific type
+	 * 		using NAMESPACE_NAME::TYPE_NAME;			// opened only the needed type.
+	 * 3. write whole name qualifier
+	 * 		NAMESPACE_NAME::TYPE_NAME ... ;
+	 */
+	using namespace average;	// average namespace will be visible in scope.
+	std::cout<< "Average Calculate:  " << calculate(10,20) << std::endl;
+	std::cout<< "Sum Calculate:  " << sum::calculate(10,20) << std::endl;
 }
 /*************************************************************************************************************************************/
 
@@ -166,3 +214,7 @@ inline long long int _inlineFu_Square(int number) {
 	return number*number;
 }
 /***********************************/
+void EndMessage(void) {
+	std::cout<< "End of Program." << std::endl;
+	return;
+}

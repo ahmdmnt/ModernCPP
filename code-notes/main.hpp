@@ -11,8 +11,8 @@
 void checkCompilerVersionCPP(void);
 void _01_Basics_Part01(void);
 void _01_Basics_Part02(void);
-void _01_Basics_Part03(void);
-void _04_Control_Flow_Statements(void);
+void _02_MemoryManagement_Part01(void);
+void _03_OOP_Part01(void);
 
 
 #endif /* MAIN_HPP_ */

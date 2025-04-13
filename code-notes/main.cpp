@@ -11,10 +11,10 @@
 int main() {
 
 	checkCompilerVersionCPP();
-	_01_Basics_Part01();
-	_01_Basics_Part02();
-//	_01_Basics_Part03();
-//	_04_Control_Flow_Statements();
+//	_01_Basics_Part01();
+//	_01_Basics_Part02();
+//	_02_MemoryManagement_Part01();
+	_03_OOP_Part01();
 
 	return 0;
 }
