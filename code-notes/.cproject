@@ -91,21 +91,7 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="codeNotes.cdt.managedbuild.target.gnu.mingw.exe.444833423" name="Executable" projectType="cdt.managedbuild.target.gnu.mingw.exe"/>
 	</storageModule>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.release.878348049;cdt.managedbuild.config.gnu.mingw.exe.release.878348049.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.release.459048402;cdt.managedbuild.tool.gnu.cpp.compiler.input.2034939086">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.debug.1447975335;cdt.managedbuild.config.gnu.mingw.exe.debug.1447975335.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.debug.1132797832;cdt.managedbuild.tool.gnu.cpp.compiler.input.1809691512">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.release.878348049;cdt.managedbuild.config.gnu.mingw.exe.release.878348049.;cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.release.1285369414;cdt.managedbuild.tool.gnu.c.compiler.input.113309364">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.debug.1447975335;cdt.managedbuild.config.gnu.mingw.exe.debug.1447975335.;cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.15101519;cdt.managedbuild.tool.gnu.c.compiler.input.795470797">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration"/>
 </cproject>

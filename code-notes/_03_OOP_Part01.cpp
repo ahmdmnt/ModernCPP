@@ -17,7 +17,7 @@
 void _03_OOP_Part01(void) {
 	/* Object Oriented Programming:-
 	 * ------------------------------
-	 * Objects are the fundamental building blocks rather than the Code Algorithm.
+	 * Objects are the fundamental building blocks rather than the Code Algorithm
 	 * 	- Program is created as a collection of Objects.
 	 * 	- Every Object is an instance of a (Class == Datatype in other word).
 	 * 	- Some classes can have relationship, via inheritance.
