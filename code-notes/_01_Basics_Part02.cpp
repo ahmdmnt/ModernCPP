@@ -68,7 +68,7 @@ void _01_Basics_Part02(void) {
 		std::cout << *arrBegin << " ";
 	}
 	std::cout << std::endl;
-	/* END - Pesudo Code of Range-Based for loop implementation*/
+	/* END - Pseudo Code of Range-Based for loop implementation*/
 
 	/* Function Overloading:-
 	 * -----------------------
@@ -129,11 +129,11 @@ void _01_Basics_Part02(void) {
 	 * ------------------
 	 *	- Marked with inline keyword.
 	 *	- Such function is defined in header function not CPP file.
-	 *	- No function is called, instead assmebly code is generated directly.
+	 *	- No function is called, instead assembly code is generated directly.
 	 *		> No Stack Memory used or context switching occurs.
 	 *	- Compiler replace the function call with function body directly.
 	 *	- Improve the performance of code, but increase the code size.
-	 *	- Certain functions may not be inlined, compiler ignores it.
+	 *	- Certain functions may not be inline, compiler ignores it.
 	 *		> large functions, functions have too many conditional statements, recursion, function invoked by pointer, etc..
 	 *
 	 *	Inline functions:							vs		Macros:

@@ -21,6 +21,23 @@
 
 void _02_MemoryManagement_Part01(void) {
 
+	/* Memory Area Types:-
+	 * --------------------
+	 * C and C++ programs provide dynamic memory allocation in runtime.
+	 * All memory is taken from the reserved process address space.
+	 *  1. Stack: Allocated for Function context switching and Local variables allocation.
+	 *  2.  Data: Allocated for Global variables.
+	 *  3.  Heap: Allocated for runtime variables (Dynamic Memory Allocations).
+	 * Any Memory allocated in Heap have to be managed by the developer (allocation and deallocation).
+	 */
+
+	/* Dynamic Memory Allocation in C:-
+	 * ------------------------------------
+	 *  -  malloc(): Allocate RAW Memory in Heap.
+	 *  -  calloc(): Allocate RAW Memory in Heap and init it with zeros.
+	 *  - realloc(): Allocate larger chunk of Memory for an existing allocation.
+	 *  -    free(): Deallocate and release allocated Memory area.
+	 */
 	int *ptrData1 = (int*)malloc(sizeof(int));		// C++ MANDATORY to cast the malloc output before saving it in, non-void pointer.
 	int *ptrData2 = (int*)calloc(1, sizeof(int));	// calloc(NumberofElement, sizeof(Element))
 	int *ptrArr1 = (int*)malloc(3*sizeof(int));		// Array of 3 Elements

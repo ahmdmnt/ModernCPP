@@ -13,6 +13,9 @@ void _01_Basics_Part01(void);
 void _01_Basics_Part02(void);
 void _02_MemoryManagement_Part01(void);
 void _03_OOP_Part01(void);
+void _04_OOP_LValueRValue(void);
+void _05_OOP_MoveSemantics(void);
+
 
 
 #endif /* MAIN_HPP_ */

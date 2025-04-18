@@ -14,7 +14,9 @@ int main() {
 //	_01_Basics_Part01();
 //	_01_Basics_Part02();
 //	_02_MemoryManagement_Part01();
-	_03_OOP_Part01();
+//	_03_OOP_Part01();
+//	_04_OOP_LValueRValue();
+	_05_OOP_MoveSemantics();
 
 	return 0;
 }

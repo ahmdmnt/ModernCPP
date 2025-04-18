@@ -69,7 +69,7 @@ void _01_Basics_Part01(void) {
 	refVariable = newVariable;		// This is NOT new Referent, it is only copying value of newVariable in refVariable
 	std::cout << "Addresses: " << &origVariable << "-" << &refVariable << "-" << &newVariable << std::endl;
 
-	/* Difference between Pointers and Refernce:-
+	/* Difference between Pointers and Reference:-
 	 * -------------------------------------------
 	 * Reference:											Pointer:
 	 * ----------											---------
