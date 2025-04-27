@@ -16,7 +16,11 @@ int main() {
 //	_02_MemoryManagement_Part01();
 //	_03_OOP_Part01();
 //	_04_OOP_LValueRValue();
-	_05_OOP_MoveSemantics();
+//	_05_OOP_MoveSemantics();
+//	_06_OOP_RuleOf5();
+//	_07_OperatorOverloading_Part01();
+	_08_Friend_SmartPointer();
+//	_09_OperatorOverloading_Part02();
 
 	return 0;
 }

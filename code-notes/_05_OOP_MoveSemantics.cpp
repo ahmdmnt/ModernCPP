@@ -24,6 +24,16 @@ public:
 		std::cout << "intData() - Parameterized Constructor Invoked" << std::endl;
 		pInt = new int(value);
 	}
+	intData(const intData& refObj) {	// COPY CONSTRUCTOR
+		std::cout << "intData() - Copy Constructor Invoked" << std::endl;
+		this->pInt = new int(*refObj.pInt);	// Deep Copy.
+	}
+	intData(intData&& rrefObj) {		// MOVE CONSTRUCTOR  -- r-valure reference CAN NOT be constant to allow moving resources
+		std::cout << "intData() - Move Constructor Invoked" << std::endl;
+
+		this->pInt = rrefObj.pInt;		// Shallow Copy.
+		rrefObj.pInt = nullptr;			// Remove Old Pointer Value, if it destructor is called, no errors occur.
+	}
 
 	int getValue(void) const {
 		std::cout<< "intData= " << *pInt << std::endl;
@@ -41,7 +51,7 @@ public:
 };
 
 intData addIntData(const intData &n1, const intData &n2) {
-	intData tempData;
+	intData tempData;	//	Default Constructor
 	tempData.setValue(n1.getValue()+n2.getValue());
 	return tempData;
 }
@@ -79,10 +89,33 @@ void _05_OOP_MoveSemantics(void) {
 	 *  Object_2 : Same Pointer - New Variable.  " Shallow Copy" + Object_1.Pointer = NULL
 	 *  Then, When Object_1 Destructor will be called safely for Object_1 without affecting new Object.
 	 */
-	intData myData1 {1};
-	intData myData2 {3};
-	// must disable "-fno-elide-constructors" compiler flag
-	myData1.setValue( addIntData(myData1, myData2).getValue() );// I will Add two intData, return of it will be new Object, this Object gets its value. (R-Val)
+	intData myData1 {1};	// Parameterize Constructor
+	intData myData2 {3};	// Parameterize Constructor
+
+	/* Description of Below Code Line [if -fno-elide-constructors is enabled]:-
+	 * --------------------------------------------------------------------------
+	 * 1. I will Add two intData, Create an Object - Default constructor.
+	 * 2. Set its value with Sum of two passed args.
+	 * 3. return this Object. -- After return a temp Object will be created by Move Constructor .
+	 * 4. Fetch Value from this temp Object.
+	 * 5. Set myData1 Object with the temp Object value.
+	 *
+	 * intData(intData&& rrefObj) being invoked (move constructor), because tempData is a local object and is about to be returned.
+	 * tempData is constructed directly in the memory allocated for the result in the calling function (myData1.setValue(...)).
+	 *
+	 * Description of Below Code Line [if -fno-elide-constructors is disabled]:-
+	 * --------------------------------------------------------------------------
+	 * Move Elision will Occur .. it will skip creating the temp Object in Step 3 and 4.
+	 * and Compiler will move value directly and construct the Object at destination.
+	 *
+	 * The compiler constructs tempData directly into the target of the assignment in the caller (myData1.setValue(...)).
+	 *
+	 * [[Move Elision]]:
+	 * is a compiler optimization where unnecessary copy or move operations are skipped.
+	 * It makes your C++ programs faster by constructing objects directly in their destination,
+	 * rather than moving or copying them after construction.
+	 */
+	myData1.setValue( addIntData(myData1, myData2).getValue() );
 	myData1.getValue();
 }
 
