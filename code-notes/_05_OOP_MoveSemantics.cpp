@@ -6,6 +6,7 @@
  */
 
 #include <iostream>
+#include "intData.hpp"
 
 /* Module Description:-
  * ---------------------
@@ -13,42 +14,7 @@
  * 	2. Move Semantics.
  */
 
-class intData {
-	int* pInt;
-public:
-	intData(){
-		std::cout << "intData() - Default Constructor Invoked" << std::endl;
-		pInt = new int(0);
-	}
-	intData(int value) {
-		std::cout << "intData() - Parameterized Constructor Invoked" << std::endl;
-		pInt = new int(value);
-	}
-	intData(const intData& refObj) {	// COPY CONSTRUCTOR
-		std::cout << "intData() - Copy Constructor Invoked" << std::endl;
-		this->pInt = new int(*refObj.pInt);	// Deep Copy.
-	}
-	intData(intData&& rrefObj) {		// MOVE CONSTRUCTOR  -- r-valure reference CAN NOT be constant to allow moving resources
-		std::cout << "intData() - Move Constructor Invoked" << std::endl;
 
-		this->pInt = rrefObj.pInt;		// Shallow Copy.
-		rrefObj.pInt = nullptr;			// Remove Old Pointer Value, if it destructor is called, no errors occur.
-	}
-
-	int getValue(void) const {
-		std::cout<< "intData= " << *pInt << std::endl;
-		return *pInt;
-	}
-
-	void setValue(int value) {
-		*pInt = value;
-	}
-
-	~intData() {
-		std::cout << "~intData() - Destructor Invoked" << std::endl;
-		delete pInt;
-	}
-};
 
 intData addIntData(const intData &n1, const intData &n2) {
 	intData tempData;	//	Default Constructor

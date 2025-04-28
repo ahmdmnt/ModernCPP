@@ -6,6 +6,7 @@
  */
 
 #include <iostream>
+#include "intData.hpp"
 
 /* RULE OF 5:-
  * ------------
@@ -31,68 +32,9 @@
  * BUT,, if we provide some user-defined implementation, COMPILER WILL NOT provide rest of functions.
  */
 
-
-class iData {
-	int *ptrInt;
-public:
-	/******************************************************************************** RULE OF 5 */
-	iData() {
-		std::cout << "iData() - Default Constructor invoked!!" << std::endl;
-		ptrInt = new int {0};
-	}
-	iData(int l_value) {
-		std::cout << "iData(int l_value) - Parameterized Constructor invoked!!" << std::endl;
-		ptrInt = new int {l_value};
-	}
-	iData(const iData &refObj) {
-		std::cout << "iData(const iData &refObj) - Copy Constructor invoked!!" << std::endl;
-		this->ptrInt = new int {*refObj.ptrInt};	// Deep Copy
-	}
-	iData(iData &&rrefObj) {
-		std::cout << "iData(iData &&rrefObj) - Move Constructor invoked!!" << std::endl;
-		this->ptrInt = rrefObj.ptrInt;	// Shallow Copy.
-		rrefObj.ptrInt = nullptr;		// Remove Resource from old instance.
-	}
-	~iData() {
-		std::cout << "~iData() - Destructor invoked!!" << std::endl;
-		delete ptrInt;			// Release Resource
-		ptrInt = nullptr;		// Clear Pointer Variable
-
-	}
-	iData& operator=(const iData &refObj) {
-		std::cout << "operator=(const iData &refObj) - Copy Assign Operator invoked!!" << std::endl;
-		if (this != &refObj) {							/* Handle self-assignment */
-			delete this->ptrInt;						// Clean up existing resources, if available. (Avoid Memory Leak).
-			this->ptrInt = new int{*refObj.ptrInt};		// Perform a Deep Copy.
-		}
-		return *this;
-	}
-	iData& operator=(iData &&rrefObj) {
-		std::cout << "operator=(iData &&rrefObj) - Move Assign Operator invoked!!" << std::endl;
-		if (this != &rrefObj) {					/* Handle self-assignment */
-			delete this->ptrInt;				// Clean up existing resources
-			this->ptrInt = rrefObj.ptrInt;		// Shallow Copy.
-			rrefObj.ptrInt = nullptr;			// Remove Resource from old instance.
-		}
-		return *this;
-
-	}
-	/************************************************************************* END OF RULE OF 5 */
-	int getValue() const {
-		return *ptrInt;
-	}
-	void setValue(int l_value) {
-		if(nullptr == ptrInt) {		// Re-Initialize if MOVED. OR // Define an Error.
-			ptrInt = new int {l_value};
-			// OR std::cout << "ERR: This Object has been moved!!" << std::endl;
-		}
-		*ptrInt = l_value;
-	}
-};
-
 class heapData {
 public:
-	iData numData {};
+	intData numData {};
 	/******************************************************************************** RULE OF 0 */
 	heapData() {};
 	heapData(int l_value) : numData{l_value} {};		// will call Parameterized Constructor of iData class.

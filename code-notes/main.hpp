@@ -16,9 +16,8 @@ void _03_OOP_Part01(void);
 void _04_OOP_LValueRValue(void);
 void _05_OOP_MoveSemantics(void);
 void _06_OOP_RuleOf5(void);
-void _07_OperatorOverloading_Part01(void);
-void _08_Friend_SmartPointer(void);
-void _09_OperatorOverloading_Part02(void);
+void _07_OperatorOverloading_Friend(void);
+void _08_SmartPointer(void);
 
 
 

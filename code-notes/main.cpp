@@ -18,9 +18,8 @@ int main() {
 //	_04_OOP_LValueRValue();
 //	_05_OOP_MoveSemantics();
 //	_06_OOP_RuleOf5();
-//	_07_OperatorOverloading_Part01();
-	_08_Friend_SmartPointer();
-//	_09_OperatorOverloading_Part02();
+//	_07_OperatorOverloading_Friend();
+	_08_SmartPointer();
 
 	return 0;
 }
