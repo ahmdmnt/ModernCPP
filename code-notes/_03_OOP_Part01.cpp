@@ -27,6 +27,17 @@
  *	14. Delete Function.
  */
 
+/* Difference Between Initialization and Assignment
+ * Initialization									Assignment
+ * 	- Less Function Calls to set values.			 - More function calls to set values.
+ *
+ * Member-Initializer List:-
+ * ---------------------------
+ * When Initializing Object with another Object.. it is better to use Member-Init List.
+ * to avoid Assigning in Object Constructor
+ * 		# myClass(const otherClass& local): myMember(local) {}
+ */
+
 #include <iostream>
 
 #include "_03_OOP_CLASSES/_03.1_CLASS_Car.hpp"				// TOPICS: 1/2/3/4/5/6/7
@@ -221,7 +232,7 @@ HeapInteger sumHeapInteger(int num1, int num2) {
 	 * Explicitly create a temporary object before returning (might not work, and compiler may optmize also.
 	 * and/or use "-fno-elide-constructors" flag in compiler */
 
-//	return HeapInteger(num1+num2);
+	//	return HeapInteger(num1+num2);
 	HeapInteger temp(num1+num2);
 	return temp;
 }

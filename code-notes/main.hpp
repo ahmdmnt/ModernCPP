@@ -18,6 +18,7 @@ void _05_OOP_MoveSemantics(void);
 void _06_OOP_RuleOf5(void);
 void _07_OperatorOverloading_Friend(void);
 void _08_SmartPointer(void);
+void _09_TypeConversion(void);
 
 
 

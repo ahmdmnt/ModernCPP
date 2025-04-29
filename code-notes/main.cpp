@@ -19,7 +19,8 @@ int main() {
 //	_05_OOP_MoveSemantics();
 //	_06_OOP_RuleOf5();
 //	_07_OperatorOverloading_Friend();
-	_08_SmartPointer();
+//	_08_SmartPointer();
+	_09_TypeConversion();
 
 	return 0;
 }

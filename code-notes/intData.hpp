@@ -41,8 +41,10 @@ public:
 	intData operator++(int);							// Post-Increment
 	bool operator==(const intData &otherObj) const;		// Check Equality
 	void operator()();									// Function Call
+	explicit operator int();							// [int] Type Conversion,, only used explicitly by user, implicit cast disabled.
 
 	/*Normal Class Methods*/
+	int fetchValue(void) const;
 	int getValue(void) const;
 	void setValue(int value);
 

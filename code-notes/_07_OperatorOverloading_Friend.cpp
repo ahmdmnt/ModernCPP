@@ -18,6 +18,20 @@
  * 	6. Addition Global Operator Overloading "intValue+object".
  * 	7. Input and Output Stream Operator Overloading.
  * 	8. Friend Keyword: friend.
+ * 	9. RULES.
+ */
+
+/* [[IMPORTANT]] Operator Overloading Rules:-
+ * --------------------------------------------
+ * 	1. Basic Behavior of Operators does not change when overloading is used.
+ * 		- Associativity, precedence, operand count -> doesn't changes.
+ * 	2. Operator Overloading function should be [non-static]
+ * 		- except for new and delete only.
+ * 	3. AT LEAST one Argument should always be user-defined type, otherwise compiler will reject.
+ * 	4. if first argument is primitive type, it HAS TO BE overloaded as Global Function not class method.
+ * 	5. not all operators can be overloaded; dot[.], ternary[?:], pointer to member[.*], sizeof() operators.
+ *	6. CAN NOT define new operators in overloading not available in C++.
+ *	7. Overloaded function, shall be mimicking the basic behavior of operator in user defined types "to avoid confusion for users".
  */
 
 /* Operator Overloading Global Function:-
