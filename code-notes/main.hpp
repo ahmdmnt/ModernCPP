@@ -19,7 +19,12 @@ void _06_OOP_RuleOf5(void);
 void _07_OperatorOverloading_Friend(void);
 void _08_SmartPointer(void);
 void _09_TypeConversion(void);
-
+void _10_UniquePointer(void);
+void _11_SharedPointer(void);
+void _12_WeakPointer(void);
+void _13_SmartPtr_CircularReference(void);
+void _14_DynamicArrays_DeleterFu(void);
+void _15_makeFunction(void);
 
 
 #endif /* MAIN_HPP_ */

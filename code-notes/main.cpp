@@ -20,7 +20,13 @@ int main() {
 //	_06_OOP_RuleOf5();
 //	_07_OperatorOverloading_Friend();
 //	_08_SmartPointer();
-	_09_TypeConversion();
+//	_09_TypeConversion();
+//	_10_UniquePointer();
+//	_11_SharedPointer();
+//	_12_WeakPointer();
+//	_13_SmartPtr_CircularReference();
+//	_14_DynamicArrays_DeleterFu();
+	_15_makeFunction();
 
 	return 0;
 }

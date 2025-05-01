@@ -17,6 +17,12 @@
  * 	2. Resource Acquisition is Initialization.
  * 	3. Concept of Smart Pointer "simple implementation".
  * 	4. Arrow [->] Operator Overloading
+ *
+ * Main Methods:
+ * --------------
+ *  - .reset() 	   -> delete old resource and re assign
+ *  - if(PtrName)  -> check if null
+ *  - .use_count() -> return count of copies for shared ptr
  */
 
 
