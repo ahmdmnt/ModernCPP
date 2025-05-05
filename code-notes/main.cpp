@@ -26,7 +26,10 @@ int main() {
 //	_12_WeakPointer();
 //	_13_SmartPtr_CircularReference();
 //	_14_DynamicArrays_DeleterFu();
-	_15_makeFunction();
+//	_15_makeFunction();
+//	_16_Enum();
+//	_17_Strings();
+	_18_Literals_ConstantExpr();
 
 	return 0;
 }

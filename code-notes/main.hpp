@@ -25,6 +25,8 @@ void _12_WeakPointer(void);
 void _13_SmartPtr_CircularReference(void);
 void _14_DynamicArrays_DeleterFu(void);
 void _15_makeFunction(void);
-
+void _16_Enum(void);
+void _17_Strings(void);
+void _18_Literals_ConstantExpr(void);
 
 #endif /* MAIN_HPP_ */
