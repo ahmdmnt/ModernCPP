@@ -10,7 +10,7 @@
 
 int main() {
 
-	checkCompilerVersionCPP();
+//	checkCompilerVersionCPP();
 //	_01_Basics_Part01();
 //	_01_Basics_Part02();
 //	_02_MemoryManagement_Part01();
@@ -21,7 +21,7 @@ int main() {
 //	_07_OperatorOverloading_Friend();
 //	_08_SmartPointer();
 //	_09_TypeConversion();
-//	_10_UniquePointer();
+//	_10_UniquePointer();		// NEED TO BE RECHECKED ??
 //	_11_SharedPointer();
 //	_12_WeakPointer();
 //	_13_SmartPtr_CircularReference();
@@ -29,7 +29,27 @@ int main() {
 //	_15_makeFunction();
 //	_16_Enum();
 //	_17_Strings();
-	_18_Literals_ConstantExpr();
+//	_18_Literals_ConstantExpr();
+//	_19_InitializerList();
+//	_20_stdVector();
+//	_21_Union();
+//	_22_OOP_Composition_Inheritance();
+//	_23_Tst_Project_I();
+//	_23_Tst_Project_I_Polymorphism_RTTI();
+//	_23_Tst_Project_I_ObjectSlicing_Casting();
+//	_23_Tst_Project_I_DynamicCast();
+//	_24_Final_Override_ClassSpecifier();
+//	_25_typeidOperator();
+//	_26_AbstractClass();
+//	_27_Multi_Inheritance();
+//	_28_ExceptionHandling();
+//	_29_ExceptionHandling_P2();
+//	_30_ExceptionHandling_P3();
+//	_31_
+//	_32_
+//	_33_
+	_34_Templates();
+
 
 	return 0;
 }

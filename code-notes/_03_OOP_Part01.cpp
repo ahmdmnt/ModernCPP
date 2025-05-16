@@ -76,6 +76,14 @@ void _03_OOP_Part01(void) {
 
 	/* Object Oriented Programming:-
 	 * ------------------------------
+	 * Methodology:-
+	 * --------------
+	 * 	- System is made of Objects.
+	 * 	- Objects are instance of Classes.
+	 * 	- Classes can be related to each others.
+	 * 	- Collaboration between objects can exists.
+	 * 	- Which Define the System behavior.
+	 * 	---------------------------------------------
 	 * Objects are the fundamental building blocks rather than the Code Algorithm
 	 * 	- Program is created as a collection of Objects.
 	 * 	- Every Object is an instance of a Class.

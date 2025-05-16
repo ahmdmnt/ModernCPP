@@ -1,0 +1,22 @@
+- Banking Application Project:-
+-------------------------------=--
+	1. Manage Customers accounts.
+	2. Customer can perform common operations.
+	3. Bank can perform adminstrative operations.
+	
+	SW CODE BREAKDOWN:
+		- Account will be represented through account class.
+		  >Account Base Class:
+			name
+			acc_num
+			balance
+			...
+			---------
+			withdraw
+			deposit
+			getBalance
+			accumulateInterest
+			getInterestRate
+			...
+		  >there will be child account classes such as savings, checking, etc...
+		- 

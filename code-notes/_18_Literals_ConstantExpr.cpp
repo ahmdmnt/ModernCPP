@@ -5,7 +5,6 @@
  *      Author: AhmedMontasser
  */
 
-
 #include <iostream>
 
 /* Literals:-
@@ -46,7 +45,7 @@ public:
 };
 
 Distance operator""_km(long double l_value) {
-	return Distance(l_value);
+	return Distance{static_cast<long double>(l_value)};
 }
 Distance operator""_m(long double l_value) {
 	return Distance{l_value/1000};
@@ -68,14 +67,15 @@ constexpr int addConstNumber(int n1, int n2) {
 
 void _18_Literals_ConstantExpr(void) {
 
-	Distance dist1 = Distance(10_km);
-	std::cout<< "getKM() = " << dist1.getKM() << std::endl;
+	Distance dist1 {10.5_km};		// @suppress("Invalid arguments")
+	std::cout<< "getKM() = " << dist1.getKM() << " km" << std::endl;
 
-	Distance dist2 = {2000_m};
-	std::cout<< "getKM() = " << dist2.getKM() << std::endl;
+	Distance dist2 {2000.2_m};		// @suppress("Invalid arguments")
+	std::cout<< "getKM() = " << dist2.getKM() << " km" << std::endl;
 
-	Distance dist3 {10_mile};
-	std::cout<< "getKM() = " << dist3.getKM() << std::endl;
+	Distance dist3 {10.4_mile};		// @suppress("Invalid arguments")
+	std::cout<< "getKM() = " << dist3.getKM() << " km" << std::endl;
+
 
 	/* keyword: constexpr
 	 * -------------------
@@ -108,5 +108,6 @@ void _18_Literals_ConstantExpr(void) {
 	constexpr int sum = addConstNumber(1, 2);
 	std::cout << "sum = " << sum << std::endl;
 
+	/***********************************************************************************************************/
 }
 
