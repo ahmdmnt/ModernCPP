@@ -53,7 +53,7 @@ void showEmployeeInfo(const std::unique_ptr<employee>& l_emp) {
 	l_emp->getProject()->showProjectDetails();
 }
 
-void _11_SharedPointer(void) {
+void _11_SharedPointer() {
 
 	std::shared_ptr<project> project102 {new project {}};
 	project102->setName("Project_102");

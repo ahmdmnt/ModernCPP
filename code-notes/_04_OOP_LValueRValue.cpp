@@ -21,7 +21,7 @@ void printName(const std::string &&name);
  *	3. Function Overloading with Fu-Args: LVR and RVR.
  */
 
-void _04_OOP_LValueRValue(void) {
+void _04_OOP_LValueRValue() {
 
 	/* L-Value and R-Values:-
 	 * -----------------------

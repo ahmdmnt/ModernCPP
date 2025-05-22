@@ -49,7 +49,7 @@ public:
 	}
 };
 
-void _12_WeakPointer(void) {
+void _12_WeakPointer() {
 	int myValue {2};
 	printer myPrinter;
 	std::shared_ptr<int> pValue {new int {myValue}};

@@ -67,7 +67,7 @@ union advUnion {		// Memory already allocated by largest member, string Variable
    ~advUnion() {std::cout << __PRETTY_FUNCTION__ << std::endl;}		// MANDATORY
 };
 
-void _21_Union(void) {
+void _21_Union() {
 
 	tstUnion unionVariable;				// ACTIVE member is number, because it is initialized in constructor.
 	std::cout<< "decmailNumber = " << unionVariable.decmailNumber << std::endl;

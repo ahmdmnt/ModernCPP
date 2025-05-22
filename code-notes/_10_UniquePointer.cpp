@@ -61,7 +61,7 @@ void operatePointer(int l_value) {
 	storePointer(l_pData);			// Either Pass by Reference, OR, move variable is no longer needed in that scope.
 }
 
-void _10_UniquePointer(void) {
+void _10_UniquePointer() {
 
 	operatePointer(660);
 }

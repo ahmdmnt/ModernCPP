@@ -37,7 +37,7 @@ namespace sum {
 /***********************************/
 
 
-void _01_Basics_Part02(void) {
+void _01_Basics_Part02() {
 
 	/* [C++11] Range-Based For Loop:-
 	 * --------------------------------

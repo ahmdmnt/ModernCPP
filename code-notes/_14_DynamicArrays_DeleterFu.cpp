@@ -34,7 +34,7 @@ void MallocFree(int* l_ptr) {
 void UniquePtr_Deleters();
 void SharedPtr_Deleters();
 
-void _14_DynamicArrays_DeleterFu(void) {
+void _14_DynamicArrays_DeleterFu() {
 	/* Smart Pointers with Legacy Code:
 	 * ---------------------------------
 	 *	- By Default Smart Pointer call delete in destructor not free()

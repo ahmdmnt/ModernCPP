@@ -65,7 +65,7 @@ constexpr int addConstNumber(int n1, int n2) {
 	return n1+n2;
 }
 
-void _18_Literals_ConstantExpr(void) {
+void _18_Literals_ConstantExpr() {
 
 	Distance dist1 {10.5_km};		// @suppress("Invalid arguments")
 	std::cout<< "getKM() = " << dist1.getKM() << " km" << std::endl;

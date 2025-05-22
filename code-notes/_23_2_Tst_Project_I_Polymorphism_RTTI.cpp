@@ -22,7 +22,7 @@
 
 
 
-void _23_Tst_Project_I_Polymorphism_RTTI(void) {
+void _23_Tst_Project_I_Polymorphism_RTTI() {
 
 	/* Polymorphism:-
 	 * ---------------

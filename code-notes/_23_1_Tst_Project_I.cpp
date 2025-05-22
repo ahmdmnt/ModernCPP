@@ -26,7 +26,7 @@
  * -------------------------------------
  */
 
-void _23_Tst_Project_I(void) {
+void _23_Tst_Project_I() {
 
 	/* Test for Base Account Class */
 

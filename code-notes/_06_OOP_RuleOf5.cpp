@@ -52,7 +52,7 @@ heapData addData(const heapData &n1, heapData &n2) {
 	return l_heapData;
 }
 
-void _06_OOP_RuleOf5(void) {
+void _06_OOP_RuleOf5() {
 	heapData num1 {50};						// Parameterized Constructor
 	std::cout << "num1 = " << num1.numData.getValue() << std::endl << std::endl;
 

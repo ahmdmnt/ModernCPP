@@ -82,7 +82,7 @@ public:
 
 
 
-void _24_Final_Override_ClassSpecifier(void) {
+void _24_Final_Override_ClassSpecifier() {
 	text txt;
 	document &refDoc_1 = txt;
 

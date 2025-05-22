@@ -33,7 +33,7 @@ void combineStr(const char* pFirst, const char* pLast, char* combinedString) {
 	combinedString[i] = '\0';
 }
 
-void _17_Strings(void) {
+void _17_Strings() {
 	/* C-Style Strings - Static Memory Allocation */
 	char firstName[10] {"Ahmed"};
 	char  lastName[10] {"Montasser"};

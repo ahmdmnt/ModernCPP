@@ -35,7 +35,7 @@ public:
 };
 
 
-void _09_TypeConversion(void) {
+void _09_TypeConversion() {
 
 	/* Type Conversion:-
 	 * -------------------

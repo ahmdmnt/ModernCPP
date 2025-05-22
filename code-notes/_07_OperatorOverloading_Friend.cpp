@@ -56,9 +56,9 @@ intData operator+(const int& num, const intData &Obj) {		// will accept both L-V
 }
 /* (<<) Output stream Operator Overloading */
 std::ostream& operator<<(std::ostream &out, const intData &Obj) {
-	std::cout << "operator<<() - Output stream Operator Overloading Invoked..." << std::endl;
-	out << "Object= " << Obj.getValue();
-	return out;		// return is reference because we are not returning local variable.
+//	std::cout << "operator<<() - Output stream Operator Overloading Invoked..." << std::endl;
+//	out << "Object= " << Obj.getValue();
+	return out << Obj.getValue();		// return is reference because we are not returning local variable.
 }
 /* (>>) Input stream Operator Overloading -- [FRIEND METHOD] */
 std::istream& operator>>(std::istream &in, intData &Obj) {
@@ -79,7 +79,7 @@ public:
 };
 
 
-void _07_OperatorOverloading_Friend(void) {
+void _07_OperatorOverloading_Friend() {
 
 	/* Operator Overloading:-
 	 * -----------------------

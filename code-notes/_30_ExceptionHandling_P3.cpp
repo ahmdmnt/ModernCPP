@@ -118,7 +118,7 @@ int intSum3(int n1, int n2) noexcept(noexcept(testfunction)) {	// except of this
 	return n1+n2;
 }
 
-void _30_ExceptionHandling_P3(void) {
+void _30_ExceptionHandling_P3() {		//-------------- MAIN FUNCTION -------------- //
 	try {
 		tstClass myClass {};	// if exception is thrown here
 		// constructor of this class is not fully implemented ,, so ITS destructor will not be invoked.

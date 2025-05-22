@@ -56,7 +56,7 @@ void checkMotor(motorState l_state) {
 	}
 }
 
-void _16_Enum(void) {
+void _16_Enum() {
 
 	/* C-Style Enum */
 	bkgrdColors myColor {GREEN};

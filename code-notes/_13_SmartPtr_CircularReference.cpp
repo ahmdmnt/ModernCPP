@@ -75,7 +75,7 @@ public:
 };
 
 
-void _13_SmartPtr_CircularReference(void) {
+void _13_SmartPtr_CircularReference() {
 	std::shared_ptr<employeeClass> emp001 {new employeeClass{"Ahmed"}};
 	std::shared_ptr<employeeClass> emp002 {new employeeClass{"Mohamed"}};
 	std::shared_ptr<projectClass>  proj01 {new projectClass{"JLR ADAS Project"} };

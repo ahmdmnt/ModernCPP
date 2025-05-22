@@ -19,7 +19,7 @@
 #include <iostream>
 
 
-void _02_MemoryManagement_Part01(void) {
+void _02_MemoryManagement_Part01() {
 
 	/* Memory Area Types:-
 	 * --------------------

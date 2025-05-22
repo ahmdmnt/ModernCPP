@@ -48,8 +48,21 @@ int main() {
 //	_31_
 //	_32_
 //	_33_
-	_34_Templates();
+//	_34_FunctionTemplates();
+//	_35_FunctionTemplates_P2();
+//	_36_FunctionTemplates_P3();		// NEED TO CHECK MORE ABOUT [Fast Forward] Feature.
+//	_37_FunctionTemplates_P4();
+//	_38_ClassTemplates();
+//	_39_ClassTemplates_P2();
+//	_40_AliasTemplates();
+//	_41_TypeTraits_Templates();
+//	_42_StaticAssert();
+//	_43_FunctionPointers_Callbacks();
+//	_44_FunctionObjects_Callbacks();
+//	_45_LambdaExpression();
+	_46_Lambda_CaptureList();
+	_47_Lambda_Nested_GeneralizedCapture();
 
-
+//	test();
 	return 0;
 }

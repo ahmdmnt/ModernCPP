@@ -16,7 +16,7 @@
 
 #include <iostream>
 
-void _01_Basics_Part01(void) {
+void _01_Basics_Part01() {
 	/* Initialization Types:-
 	 * ------------------------
 	 * 	1. Copy Initialization	: Avoid with user-defined types

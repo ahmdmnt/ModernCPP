@@ -72,7 +72,7 @@ void DrawLine(Point pStart, Point pEnd) {
 	std::cout<< "  End = (" << pEnd.x_axis << "," << pEnd.y_axis << ")" << std::endl;
 }
 
-void _03_OOP_Part01(void) {
+void _03_OOP_Part01() {
 
 	/* Object Oriented Programming:-
 	 * ------------------------------

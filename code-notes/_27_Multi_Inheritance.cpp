@@ -96,7 +96,7 @@ public:
 };
 
 
-void _27_Multi_Inheritance(void) {
+void _27_Multi_Inheritance() {
 
 	iostream myIOStream("Ahmed");
 

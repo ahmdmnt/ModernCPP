@@ -53,7 +53,7 @@ void processHeapRecords(int count) {
 }
 /***************************************************************************************************/
 
-void _28_ExceptionHandling(void) {
+void _28_ExceptionHandling() {
 
 	// Handling Exception -- FORCED HANDLING OR THE CODE WILL CRASH.
 	try {

@@ -24,7 +24,7 @@ void printVector(std::vector<int>& l_vect) {
 }
 
 
-void _20_stdVector(void) {
+void _20_stdVector() {
 
 	/* Std::Vector:-
 	 * --------------

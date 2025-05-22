@@ -40,6 +40,8 @@ public:
 	intData& operator++();								// Pre-Increment
 	intData operator++(int);							// Post-Increment
 	bool operator==(const intData &otherObj) const;		// Check Equality
+	bool operator>(const intData &otherObj) const;		// Check Greater Than
+	bool operator<(const intData &otherObj) const;		// Check Less Than
 	void operator()();									// Function Call
 	explicit operator int();							// [int] Type Conversion,, only used explicitly by user, implicit cast disabled.
 
@@ -50,6 +52,7 @@ public:
 
 	/* Friend Classes and Functions */
 	friend std::istream& operator>>(std::istream &in, intData &Obj);
+	friend std::ostream& operator<<(std::ostream &out, const intData &Obj);
 	friend class printer;
 };
 

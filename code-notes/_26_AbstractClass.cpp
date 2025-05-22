@@ -71,7 +71,7 @@ public:
 	}
 };
 
-void _26_AbstractClass(void) {
+void _26_AbstractClass() {
 
 //	docu myDoc;			// ERROR: cannot declare variable 'myDoc' to be of abstract type 'docu'
 

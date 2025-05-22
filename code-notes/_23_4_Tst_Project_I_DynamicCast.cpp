@@ -21,7 +21,7 @@
  */
 
 
-void _23_Tst_Project_I_DynamicCast(void) {
+void _23_Tst_Project_I_DynamicCast() {
 
 	checkingAccount myChkAccount {"Ahmed", "Checking", 1000};
 	savingsAccount mySavAccount {"Ahmed", "Checking", 1000, 0.5f};

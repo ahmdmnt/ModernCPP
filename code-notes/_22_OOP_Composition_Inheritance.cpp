@@ -84,7 +84,7 @@ public:
  */
 
 
-void _22_OOP_Composition_Inheritance(void) {
+void _22_OOP_Composition_Inheritance() {
 	/*
 	 * Composition:-
 	 * --------------

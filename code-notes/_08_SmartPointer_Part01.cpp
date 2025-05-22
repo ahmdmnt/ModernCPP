@@ -87,7 +87,7 @@ void sharedPtr_process(std::shared_ptr<intData> l_ptr) {
 	std::cout<< std::endl << "l_ptr=" << l_ptr->fetchValue() << std::endl << std::endl;
 }
 
-void _08_SmartPointer(void) {
+void _08_SmartPointer() {
 
 	/* Using normal Pointer */
 	/* Destructor Not Called, Not Properly Destroyed. */

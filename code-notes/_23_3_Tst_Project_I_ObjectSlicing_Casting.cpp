@@ -18,7 +18,7 @@
  *
  */
 
-void _23_Tst_Project_I_ObjectSlicing_Casting(void) {
+void _23_Tst_Project_I_ObjectSlicing_Casting() {
 
 	/* Object Slicing:-
 	 * -----------------

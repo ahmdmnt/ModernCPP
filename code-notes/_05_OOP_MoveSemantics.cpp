@@ -22,7 +22,7 @@ intData addIntData(const intData &n1, const intData &n2) {
 	return tempData;
 }
 
-void _05_OOP_MoveSemantics(void) {
+void _05_OOP_MoveSemantics() {
 
 	/* Copy Semantics [= duplicate]:-
 	 * --------------------------------

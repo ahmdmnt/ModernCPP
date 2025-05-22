@@ -28,7 +28,7 @@
  */
 
 
-void _25_typeidOperator(void) {
+void _25_typeidOperator() {
 
 
 	//	int number;

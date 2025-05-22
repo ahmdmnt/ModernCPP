@@ -84,6 +84,12 @@ intData intData::operator++(int) {							// POSTFIX Increment Operator - Less Ef
 bool intData::operator==(const intData &otherObj) const {		// Check Equality
 	return (*this->pInt == *otherObj.pInt);
 }
+bool intData::operator>(const intData &otherObj) const {		// Check Greater Than
+	return (*this->pInt > *otherObj.pInt);
+}
+bool intData::operator<(const intData &otherObj) const {		// Check Less Than
+	return (*this->pInt < *otherObj.pInt);
+}
 /* (()) SIMPLE Function Call Operator Overloading */
 void intData::operator()() {
 	std::cout << "operator()() - Function Call Operator Overloading Invoked..." << std::endl;
@@ -104,7 +110,7 @@ int intData::fetchValue(void) const {
 }
 
 int intData::getValue(void) const {
-	std::cout<< "intData= " << *pInt << std::endl;
+//	std::cout<< "intData= " << *pInt << std::endl;
 	return *pInt;
 }
 

@@ -81,7 +81,7 @@ void fetchRawContent_gFu(std::initializer_list<int> l_vals) {
 	std::cout<< std::endl;
 }
 
-void _19_InitializerList(void) {
+void _19_InitializerList() {
 	/* Uniform Initialization */
 	int a {10};
 	float b {10.1};

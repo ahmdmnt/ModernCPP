@@ -26,7 +26,7 @@ public:
 void makeUnique();
 void makeShared();
 
-void _15_makeFunction(void) {
+void _15_makeFunction() {
 
 	/* Normal Smart Pointer Constructor */
 	std::unique_ptr<int> pInt {new int {5}};
