@@ -8,6 +8,8 @@
 #ifndef MAIN_HPP_
 #define MAIN_HPP_
 
+#include "../code-practice/modernCppPractice.hpp"
+
 void checkCompilerVersionCPP();
 void _01_Basics_Part01();
 void _01_Basics_Part02();
@@ -58,6 +60,12 @@ void _44_FunctionObjects_Callbacks();
 void _45_LambdaExpression();
 void _46_Lambda_CaptureList();
 void _47_Lambda_Nested_GeneralizedCapture();
+void _48_FunctionWrapper_stdfunction();
+void _49_FunctionWrapper_stdbind();
+void _50_decltype();
+void _51_STL_Array_Vector_Deque();
+void _52_STL_List_ForwardList();
+void _53_STL_Set_Multiset();
 
 void test();
 #endif /* MAIN_HPP_ */

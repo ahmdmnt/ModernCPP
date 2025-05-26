@@ -45,9 +45,7 @@ int main() {
 //	_28_ExceptionHandling();
 //	_29_ExceptionHandling_P2();
 //	_30_ExceptionHandling_P3();
-//	_31_
-//	_32_
-//	_33_
+/////////////////////////////////////// FileIO >> TO BE DONE
 //	_34_FunctionTemplates();
 //	_35_FunctionTemplates_P2();
 //	_36_FunctionTemplates_P3();		// NEED TO CHECK MORE ABOUT [Fast Forward] Feature.
@@ -60,8 +58,15 @@ int main() {
 //	_43_FunctionPointers_Callbacks();
 //	_44_FunctionObjects_Callbacks();
 //	_45_LambdaExpression();
-	_46_Lambda_CaptureList();
-	_47_Lambda_Nested_GeneralizedCapture();
+//	_46_Lambda_CaptureList();
+//	_47_Lambda_Nested_GeneralizedCapture();
+//	_48_FunctionWrapper_stdfunction();
+//	_49_FunctionWrapper_stdbind();
+//	_50_decltype();
+//	_51_STL_Array_Vector_Deque();
+//	_52_STL_List_ForwardList();
+	_53_STL_Set_Multiset();
+
 
 //	test();
 	return 0;
