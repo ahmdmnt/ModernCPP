@@ -66,6 +66,12 @@ void _50_decltype();
 void _51_STL_Array_Vector_Deque();
 void _52_STL_List_ForwardList();
 void _53_STL_Set_Multiset();
+void _54_STL_Map_MultiMap();
+void _55_STL_UnorderedContainers_HashFunction();
+void _56_STL_Algorithms();
+void _57_STL_Conatiners_ExtraFeatures();
+void _58_ConcurrencyBasics();
+
 
 void test();
 #endif /* MAIN_HPP_ */

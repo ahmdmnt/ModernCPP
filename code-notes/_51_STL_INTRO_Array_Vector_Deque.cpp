@@ -56,6 +56,18 @@
  *****************************************************************************************************************************/
 
 /****************************************************************************************
+ * RECOMMENDATION: STL:-
+ * -----------------------
+ *  1- Use Vector				  : for random access, but not insertion and deletion.
+ *  2- Use deque 				  : is preferable when elements needed to be inserted/removed from both ends.
+ *  3- Use list  				  : frequent insertion/deletion are required,
+ *  4- Use forward list 		  : for memory constrained system,  frequent insertion/deletion are required.
+ *  5- Use Associative Containers : if lookup/search is important.
+ *  6- Use Set/Map				  : if sorting is required, otherwise, use
+ *  7- Use Unordered Container	  : because it behave better in searching.
+ */
+
+/****************************************************************************************
  * std::array:
  * -----------
  * 	- Thin wrapper over C-Style static array.

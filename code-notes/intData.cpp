@@ -23,8 +23,9 @@ intData::intData(const intData& refObj) {
 	std::cout << "intData() - Copy Constructor Invoked" << std::endl;
 	this->pInt = new int{*refObj.pInt};	// Deep Copy.
 }
-/* Move Constructor */
-intData::intData(intData&& rrefObj) {		// r-valure reference CAN NOT be constant to allow moving resources
+/* Move Constructor */				//--- noexcept: guarantee to compiler, that while moving, there is no way exception will be thrown.
+intData::intData(intData&& rrefObj) noexcept {		// r-valure reference CAN NOT be constant to allow moving resources
+	//-- before using noexcept i have to make sure my implementation is exception safe!
 	std::cout << "intData() - Move Constructor Invoked..." << std::endl;
 	this->pInt = rrefObj.pInt;		// Shallow Copy.
 	rrefObj.pInt = nullptr;			// Remove resource from old instance.
@@ -47,7 +48,8 @@ intData intData::operator=(const intData &otherObj) {
 	return *this;
 }
 /* (=) Move/Equality Operator Overloading */
-intData intData::operator=(intData &&otherObj) {
+intData intData::operator=(intData &&otherObj) noexcept {		// noexcept: guarantee to compiler, that while moving, there is no way exception will be thrown.
+	//-- before using noexcept i have to make sure my impelmentation is exception safe!
 	std::cout << "operator=() - Move/Equality Operator Overloading Invoked..." << std::endl;
 	if(this != &otherObj) {	// Handle Self-Assignment
 		delete this->pInt;			// Clean up existing resources

@@ -27,13 +27,13 @@ public:
 	/* Copy Constructor */
 	intData(const intData& refObj);
 	/* Move Constructor */
-	intData(intData&& rrefObj);
+	intData(intData&& rrefObj)	 noexcept;
 	/* Destructor */
 	~intData();
 
 	/* Assignment Operator Overloading */
 	intData operator=(const intData &otherObj);			// Copy Assignment
-	intData operator=(intData &&otherObj);				// Move Assignment
+	intData operator=(intData &&otherObj) noexcept;		// Move Assignment
 
 	/* Operator Overloading */
 	intData operator+(const intData &otherObj) const;	// Addition (self+Object)

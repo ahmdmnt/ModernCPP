@@ -65,7 +65,12 @@ int main() {
 //	_50_decltype();
 //	_51_STL_Array_Vector_Deque();
 //	_52_STL_List_ForwardList();
-	_53_STL_Set_Multiset();
+//	_53_STL_Set_Multiset();
+//	_54_STL_Map_MultiMap();
+//	_55_STL_UnorderedContainers_HashFunction();
+//	_56_STL_Algorithms();
+//	_57_STL_Conatiners_ExtraFeatures();
+	_58_ConcurrencyBasics();
 
 
 //	test();
