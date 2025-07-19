@@ -70,7 +70,12 @@ int main() {
 //	_55_STL_UnorderedContainers_HashFunction();
 //	_56_STL_Algorithms();
 //	_57_STL_Conatiners_ExtraFeatures();
-	_58_ConcurrencyBasics();
+//	_58_ConcurrencyBasics();
+//	_59_Concurrency_Mutex_LockGuard();
+//	_60_Concurrency_ThreadFunctionsNamespace();
+//	_61_HighLevelConcurrency_TaskBased();
+//	_62_HighLevelConcurrency_PromiseExample();
+	_63_HighLevelConcurrency_PropagateExceptions();
 
 
 //	test();

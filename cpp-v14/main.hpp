@@ -71,7 +71,11 @@ void _55_STL_UnorderedContainers_HashFunction();
 void _56_STL_Algorithms();
 void _57_STL_Conatiners_ExtraFeatures();
 void _58_ConcurrencyBasics();
-
+void _59_Concurrency_Mutex_LockGuard();
+void _60_Concurrency_ThreadFunctionsNamespace();
+void _61_HighLevelConcurrency_TaskBased();
+void _62_HighLevelConcurrency_PromiseExample();
+void _63_HighLevelConcurrency_PropagateExceptions();
 
 void test();
 #endif /* MAIN_HPP_ */

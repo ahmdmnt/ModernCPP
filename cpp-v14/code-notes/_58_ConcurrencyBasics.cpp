@@ -168,9 +168,6 @@ void _58_ConcurrencyBasics() {
 //	_58_ConcurrencyBasics_JoinableThread();
 //	_58_ConcurrencyBasics_DetachThread();
 //	_58_ConcurrencyBasics_ArgumentsWithThread();
-	_58_ConcurrencyBasics_ReturnValuesFromThread();
+	_58_ConcurrencyBasics_ReturnValuesFromThread();		// std::packaged_task, std::future
 
 }
-
-
-

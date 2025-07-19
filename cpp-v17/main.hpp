@@ -1,7 +1,7 @@
 /*
- * modernCppPractice.cpp
+ * main.hpp
  *
- *  Created on: May 23, 2025
+ *  Created on: Jul 19, 2025
  *      Author: AhmedMontasser
  */
 
@@ -14,10 +14,11 @@
  *
  */
 
+#ifndef MAIN_HPP_
+#define MAIN_HPP_
 
-void modernCppPractice() {
-	/* Assignment 01 */
 
 
-}
 
+
+#endif /* MAIN_HPP_ */
